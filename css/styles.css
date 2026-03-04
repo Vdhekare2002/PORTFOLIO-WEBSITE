@@ -178,9 +178,9 @@ nav a{
 #education{
     margin-top: 30px;
 }
-.edtech{
-    position: relative;
-margin-top: 20px;
+.education-details{
+   position: relative;
+   margin-top: 20px;
 }
 .year{
     font-size: 0.9rem;
@@ -233,7 +233,7 @@ margin-top: 20px;
 /*portfolio*/
 .project-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
 }
 .project{
@@ -253,7 +253,8 @@ margin-top: 20px;
  padding: 20px;   
 }
 .card h3{
-   color:e0e0e0;
+    color:#e0e0e0;
+
    margin-bottom:10px ; 
 }
 .card p{
