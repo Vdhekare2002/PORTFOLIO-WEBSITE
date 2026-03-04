@@ -1,4 +1,17 @@
 /* Basic reset */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+}
+html{
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +34,7 @@ body {
 
 }
 .sidebar{
-    height:90vh;
+     min-height: 100%;
     background-color:#2a2a2a;
     border-radius: 16px;
     padding:40px;
@@ -32,6 +45,7 @@ body {
     border: 1px solid #3a3a3a;
     border-radius: 16px;
     padding:40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
 }
 /* Profile section*/
 .profile{
@@ -119,12 +133,14 @@ nav a{
       color: #a0a0a0;
       font-weight: 500;
       transition: color 0.3s ease;
-        
+       padding:8px 15px;
+    border-radius:6px;  
         
 
 }
 .active,nav a:hover{
     color:#FFBF00;
+    background-color:#1e1e1e;
 }
 /*about  me*/
 .heading{
@@ -171,12 +187,14 @@ nav a{
     font-weight: 500;
 }
 .item:hover{
-    transform: scale(1.1);
-    box-shadow:0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-6px);
+    border-color:#FFBF00;
 }
 /*Education*/
-#education{
-    margin-top: 30px;
+#skills,
+#education,
+#portfolio{
+    margin-top:60px;
 }
 .education-details{
    position: relative;
@@ -245,7 +263,7 @@ nav a{
 }
 
 .project img{
-    height: 100px;
+    height: 180px;
     width:100%;
     object-fit: cover;
 }
